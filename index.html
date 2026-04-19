@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>电机再智生管理平台</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- 侧边栏 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <i class="ri-recycle-line"></i>
+      <span>电机再智生</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#" class="nav-item active" data-page="home">
+        <i class="ri-dashboard-3-line"></i><span>工作台</span>
+      </a>
+
+      <div class="nav-group-title">再制造服务</div>
+      <a href="#" class="nav-item" data-page="emc">
+        <i class="ri-flashlight-line"></i><span>EMC再造</span>
+      </a>
+      <a href="#" class="nav-item" data-page="replace">
+        <i class="ri-swap-box-line"></i><span>置换再造</span>
+      </a>
+      <a href="#" class="nav-item" data-page="lease">
+        <i class="ri-hand-coin-line"></i><span>租赁再造</span>
+      </a>
+
+      <div class="nav-group-title">服务大厅</div>
+      <a href="#" class="nav-item" data-page="repair">
+        <i class="ri-tools-line"></i><span>维修服务</span>
+      </a>
+      <a href="#" class="nav-item" data-page="energy">
+        <i class="ri-leaf-line"></i><span>节能服务</span>
+      </a>
+      <a href="#" class="nav-item" data-page="recycle">
+        <i class="ri-loop-left-line"></i><span>回收 / 出售</span>
+      </a>
+      <a href="#" class="nav-item" data-page="parts">
+        <i class="ri-settings-4-line"></i><span>零件商城</span>
+      </a>
+
+      <div class="nav-group-title">交易中心</div>
+      <a href="#" class="nav-item" data-page="orders">
+        <i class="ri-file-list-3-line"></i><span>订单管理</span>
+      </a>
+      <a href="#" class="nav-item" data-page="settlement">
+        <i class="ri-money-cny-circle-line"></i><span>结算中心</span>
+      </a>
+
+      <div class="nav-group-title">平台管理</div>
+      <a href="#" class="nav-item" data-page="enterprise">
+        <i class="ri-building-2-line"></i><span>企业管理</span>
+      </a>
+      <a href="#" class="nav-item" data-page="members">
+        <i class="ri-team-line"></i><span>会员管理</span>
+      </a>
+      <a href="#" class="nav-item" data-page="dict">
+        <i class="ri-database-2-line"></i><span>数据字典</span>
+      </a>
+      <a href="#" class="nav-item" data-page="stats">
+        <i class="ri-bar-chart-box-line"></i><span>数据看板</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- 主内容区 -->
+  <div class="main-wrap">
+    <!-- 顶栏 -->
+    <header class="topbar">
+      <button class="btn-icon" id="toggleSidebar"><i class="ri-menu-line"></i></button>
+      <div class="topbar-title" id="pageTitle">工作台</div>
+      <div class="topbar-right">
+        <div class="topbar-search">
+          <i class="ri-search-line"></i>
+          <input type="text" placeholder="搜索服务、订单..." />
+        </div>
+        <button class="btn-icon"><i class="ri-notification-3-line"></i><span class="badge">3</span></button>
+        <div class="avatar-wrap">
+          <div class="avatar">企</div>
+          <span class="avatar-name">示例企业</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 页面内容 -->
+    <main class="content" id="content">
+      <!-- JS 动态渲染 -->
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
